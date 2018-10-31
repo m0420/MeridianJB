@@ -62,7 +62,7 @@ dispatch_queue_t queue = NULL;
 #define PSPAWN_HOOK_DYLIB       "/usr/lib/pspawn_hook.dylib"
 #define TWEAKLOADER_DYLIB       "/usr/lib/TweakLoader.dylib"
 #define LIBJAILBREAK_DYLIB      "/usr/lib/libjailbreak.dylib"
-#define AMFID_PAYLOAD_DYLIB     "/meridian/amfid_payload.dylib"
+#define AMFID_PAYLOAD_DYLIB     "/spongebob/amfid_payload.dylib"
 
 const char *xpcproxy_blacklist[] = {
     "com.apple.diagnosticd",    // syslog

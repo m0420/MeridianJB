@@ -1,22 +1,22 @@
 #!/bin/bash
 
 currDir=$(dirname $0)
-meridianDir=$currDir/../..
-baseDir=$currDir/meridian-bootstrap
+spongebobDir=$currDir/../..
+baseDir=$currDir/spongebob-bootstrap
 
 # amfid_payload.dylib 
-cp $meridianDir/amfid/bin/* $baseDir/meridian/
+cp $spongebobDir/amfid/bin/* $baseDir/spongebob/
 
 # pspawn_hook.dylib
-cp $meridianDir/pspawn_hook/bin/* $baseDir/usr/lib/
+cp $spongebobDir/pspawn_hook/bin/* $baseDir/usr/lib/
 
 # jailbreakd
-cp $meridianDir/jailbreakd/bin/* $baseDir/meridian/jailbreakd/
+cp $spongebobDir/jailbreakd/bin/* $baseDir/spongebob/jailbreakd/
 
 # remove all .DS_Store files
 find $baseDir -name '.DS_Store' -delete
 
 # create tar archive
 cd $baseDir
-COPYFILE_DISABLE=1 tar -cf meridian-bootstrap.tar ./*
-mv meridian-bootstrap.tar $currDir
+COPYFILE_DISABLE=1 tar -cf spongebob-bootstrap.tar ./*
+mv spongebob-bootstrap.tar $currDir

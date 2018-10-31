@@ -1,6 +1,6 @@
 //
 //  CreditsController.m
-//  Meridian
+// spongebob
 //
 //  Created by Sticktron on 2018-06-02.
 //  Copyright © 2018 Ben Sparkes. All rights reserved.

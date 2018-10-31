@@ -1,6 +1,6 @@
 //
 //  jailbreak.h
-//  Meridian
+// spongebob
 //
 //  Created by Ben Sparkes on 16/02/2018.
 //  Copyright © 2018 Ben Sparkes. All rights reserved.
@@ -15,7 +15,7 @@ int makeShitHappen(id view);
 int runV0rtex(void);
 int patchContainermanagerd(void);
 int remountRootFs(void);
-int extractMeridianData(void);
+int extracspongebobata(void);
 void setUpSymLinks(void);
 int extractBootstrap(int *exitCode);
 int defecateAmfi(void);

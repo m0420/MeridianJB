@@ -1,6 +1,6 @@
-## Working with Meridian & libjailbreak
+## Working withspongebob& libjailbreak
 
-If your binary to tweak requires setuid0, or other entitlements/empowerments, you may need to make calls to Jailbreakd, which handles entitling of processes. This can be done via libjailbreak, a library bundled by default with Meridian.
+If your binary to tweak requires setuid0, or other entitlements/empowerments, you may need to make calls to Jailbreakd, which handles entitling of processes. This can be done via libjailbreak, a library bundled by default withspongebob
 
 ### What do these empowerments include?
 - Fixing setuid

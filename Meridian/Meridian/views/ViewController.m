@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  Meridian
+// spongebob
 //
 //  Created by Ben Sparkes on 22/12/2017.
 //  Copyright © 2017 Ben Sparkes. All rights reserved.
@@ -25,7 +25,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *versionLabel;
 @end
 
-NSString *Version = @"Meridian: v0.9-007 Pre-Release";
+NSString *Version = @spongebob v0.9-007 Pre-Release";
 NSOperatingSystemVersion osVersion;
 
 id thisClass;
@@ -62,7 +62,7 @@ bool jailbreak_has_run = false;
     [self writeTextPlain:[NSString stringWithFormat:@"> %@", Version]];
     
     if (osVersion.majorVersion != 10) {
-        [self writeTextPlain:@"> Meridian does not work on versions of iOS other than iOS 10."];
+        [self writeTextPlain:@">spongebobdoes not work on versions of iOS other than iOS 10."];
         [self writeTextPlain:[NSString stringWithFormat:@"> found iOS version %@", [self getVersionString]]];
         [self.goButton setHidden:YES];
         return;
@@ -86,11 +86,11 @@ bool jailbreak_has_run = false;
         return;
     }
     
-    // Device is already jailbroken, but not with Meridian
+    // Device is already jailbroken, but not withspongebob
     if (file_exists("/private/var/lib/dpkg/status") == 0 &&
-        file_exists("/.meridian_installed")) {
-        [self writeTextPlain:@"this device has already been jailbroken with another tool. please run Cydia Eraser to wipe this device to ensure you encounter no issues with Meridian"];
-        [self writeTextPlain:@"if you have jailbroken with a Meridian Public Beta, please install the latest Public Beta and use the 'uninstall' option"];
+        file_exists("/.spongebob_installed")) {
+        [self writeTextPlain:@"this device has already been jailbroken with another tool. please run Cydia Eraser to wipe this device to ensure you encounter no issues withspongebob];
+        [self writeTextPlain:@"if you have jailbroken with aspongebobPublic Beta, please install the latest Public Beta and use the 'uninstall' option"];
         
         [self.goButton setTitle:@"please erase" forState:UIControlStateNormal];
         [self.goButton setEnabled:NO];
@@ -128,17 +128,17 @@ bool jailbreak_has_run = false;
     // when jailbreak runs, 'go' button is
     // turned to 'respring'
     if (jailbreak_has_run) {
-        chown("/meridian/ldrestart", 0, 0);
-        chmod("/meridian/ldrestart", 0755);
-        chown("/meridian/nohup", 0, 0);
-        chmod("/meridian/nohup", 0755);
+        chown("/spongebob/ldrestart", 0, 0);
+        chmod("/spongebob/ldrestart", 0755);
+        chown("/spongebob/nohup", 0, 0);
+        chmod("/spongebob/nohup", 0755);
         
         // ldrestart restarts all launch daemons,
         // allowing shit to be injected into 'em
         int rv = execprog("/bin/bash", (const char **)&(const char*[]) {
             "/bin/bash",
             "-c",
-            "/meridian/nohup /meridian/ldrestart 2>&1 >/dev/null &",
+            "/spongebob/nohup /spongebob/ldrestart 2>&1 >/dev/null &",
             NULL
         });
         if (rv != 0) {
@@ -189,7 +189,7 @@ bool jailbreak_has_run = false;
 }
 
 - (IBAction)websiteButtonPressed:(UIButton *)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://meridian.sparkes.zone"]
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://spongebob.sparkes.zone"]
                                        options:@{}
                              completionHandler:nil];
 }
@@ -261,7 +261,7 @@ bool jailbreak_has_run = false;
         return;
     }
     
-    NSURL *url = [NSURL URLWithString:@"https://meridian.sparkes.zone/latest"];
+    NSURL *url = [NSURL URLWithString:@"https://spongebob.sparkes.zone/latest"];
     
     NSURLSessionDataTask *downloadTask = [[NSURLSession sharedSession]
                                           dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *header, NSError *error) {
@@ -281,15 +281,15 @@ bool jailbreak_has_run = false;
 }
 
 - (void)doUpdatePopup:(NSString *)update {
-    NSString *message = [NSString stringWithFormat:@"An update is available for Meridian: %@It can be downloaded from the website.", update];
+    NSString *message = [NSString stringWithFormat:@"An update is available forspongebob %@It can be downloaded from the website.", update];
     
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Meridian Update"
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@spongebobUpdate"
                                                                    message:message
                                                             preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *websiteAction = [UIAlertAction actionWithTitle:@"Website" style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction * action) {
-                                                              [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://meridian.sparkes.zone"]
+                                                              [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://spongebob.sparkes.zone"]
                                                                                                  options:@{}
                                                                                        completionHandler:nil];
                                                           }];

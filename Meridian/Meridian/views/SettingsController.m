@@ -1,6 +1,6 @@
 //
 //  SettingsController.m
-//  Meridian
+// spongebob
 //
 //  Created by Sticktron on 2018-04-03.
 //  Copyright © 2018 Ben Sparkes. All rights reserved.
@@ -119,11 +119,11 @@
     if (cell == self.psychoTwitterCell) {
         [self openLink:@"http://www.twitter.com/iBSparkes"];
     } else if (cell == self.websiteCell) {
-        [self openLink:@"https://meridian.sparkes.zone"];
+        [self openLink:@"https://spongebob.sparkes.zone"];
     } else if (cell == self.issueTrackerCell) {
-        [self openLink:@"https://github.com/PsychoTea/MeridianJB/issues"];
+        [self openLink:@"https://github.com/PsychoTeaspongebobB/issues"];
     } else if (cell == self.sourceCodeCell) {
-        [self openLink:@"https://github.com/PsychoTea/MeridianJB"];
+        [self openLink:@"https://github.com/PsychoTeaspongebobB"];
     }
 }
 

@@ -27,7 +27,7 @@
                                     <constraint firstAttribute="width" constant="360" id="E3E-vh-WoM"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meridian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEN-LM-8Uz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=spongebob textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEN-LM-8Uz">
                                 <rect key="frame" x="40" y="82" width="240" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="iDg-yc-UbH"/>
@@ -410,7 +410,7 @@
                         <color key="tintColor" red="0.81568627450980391" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
-                            <tableViewSection footerTitle="If unset, Meridian will use the &quot;Electra generator&quot; which you may already have blobs for (beginning 0xbd...)." id="yZf-Ap-PPU" userLabel="General">
+                            <tableViewSection footerTitle="If unset,spongebobwill use the &quot;Electra generator&quot; which you may already have blobs for (beginning 0xbd...)." id="yZf-Ap-PPU" userLabel="General">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="Kpj-ds-EgO" imageView="zCI-F8-PLb" style="IBUITableViewCellStyleDefault" id="XfL-Kd-aoQ">
                                         <rect key="frame" x="0.0" y="35" width="375" height="50"/>
@@ -639,7 +639,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Meridian Website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XaJ-WV-s6j">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text=spongebobWebsite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XaJ-WV-s6j">
                                                     <rect key="frame" x="56" y="0.0" width="284" height="49.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>

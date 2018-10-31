@@ -1,6 +1,6 @@
 //
 //  untar.h
-//  Meridian
+// spongebob
 //
 //  Created by Ben Sparkes on 16/02/2018.
 //  Copyright © 2018 Ben Sparkes. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  offsetdump.m
-//  Meridian
+// spongebob
 //
 //  Created by Ben Sparkes on 30/03/2018.
 //  Copyright © 2018 Ben Sparkes. All rights reserved.
@@ -12,7 +12,7 @@
 #include "v0rtex.h"
 
 void dumpOffsetsToFile(offsets_t *offsets, uint64_t kernel_base, uint64_t kernel_slide) {
-    NSData *blob = [NSData dataWithContentsOfFile:@"/meridian/offsets.plist"];
+    NSData *blob = [NSData dataWithContentsOfFile:@"/spongebob/offsets.plist"];
     NSMutableDictionary *off_file = [NSPropertyListSerialization propertyListWithData:blob
                                                                               options:NSPropertyListMutableContainers
                                                                                format:nil
@@ -73,5 +73,5 @@ void dumpOffsetsToFile(offsets_t *offsets, uint64_t kernel_base, uint64_t kernel
                                                                                                            offsets->sha1_update + kernel_slide,
                                                                                                            offsets->sha1_final + kernel_slide)];
     
-    [off_file writeToFile:@"/meridian/offsets.plist" atomically:YES];
+    [off_file writeToFile:@"/spongebob/offsets.plist" atomically:YES];
 }

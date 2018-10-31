@@ -36,7 +36,7 @@
 		B585494B20A64F8F00107CF2 /* nvpatch.c in Sources */ = {isa = PBXBuildFile; fileRef = B585494A20A64F8F00107CF2 /* nvpatch.c */; };
 		B585F4182051993E0049C703 /* offsetfinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = B585F4172051993E0049C703 /* offsetfinder.mm */; };
 		B5A034FD210D162900C0E52E /* preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A034FC210D162900C0E52E /* preferences.m */; };
-		B5A4EA95205F14CE00B32F89 /* meridian-bootstrap.tar in Resources */ = {isa = PBXBuildFile; fileRef = B5A4EA94205F14CD00B32F89 /* meridian-bootstrap.tar */; };
+		B5A4EA95205F14CE00B32F89 /* spongebob-bootstrap.tar in Resources */ = {isa = PBXBuildFile; fileRef = B5A4EA94205F14CD00B32F89 /* spongebob-bootstrap.tar */; };
 		B5B7C2A01FF2BA100087619A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B7C29F1FF2BA100087619A /* main.m */; };
 		B5B7C2AB1FF2C7860087619A /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B7C2AA1FF2C7860087619A /* IOKit.framework */; };
 		B5B9E03B2060280500FEA273 /* build_time in Resources */ = {isa = PBXBuildFile; fileRef = B5B9E03A2060280400FEA273 /* build_time */; };
@@ -84,7 +84,7 @@
 		B50F79511FF2248C000D6015 /* kernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kernel.h; sourceTree = "<group>"; };
 		B50F79521FF2248C000D6015 /* root-rw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "root-rw.h"; sourceTree = "<group>"; };
 		B50F79531FF2248D000D6015 /* amfi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = amfi.m; sourceTree = "<group>"; };
-		B514CC761FECD788005F4E6B /* Meridian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meridian.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B514CC761FECD788005F4E6B /*spongebobapp */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path =spongebobapp; sourceTree = BUILT_PRODUCTS_DIR; };
 		B514CC791FECD788005F4E6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B514CC7C1FECD788005F4E6B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B514CC801FECD788005F4E6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,12 +102,12 @@
 		B5783DB1210DDBE0004339F8 /* nonce.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nonce.m; sourceTree = "<group>"; };
 		B5783DB3210DDC79004339F8 /* iokit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iokit.h; sourceTree = "<group>"; };
 		B5783DB4210DDE62004339F8 /* nonce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nonce.h; sourceTree = "<group>"; };
-		B57A06C2202CDC8B00ACDB9D /* create-meridian-bootstrap.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "create-meridian-bootstrap.sh"; sourceTree = "<group>"; };
-		B57A06E4202CDF9100ACDB9D /* meridian-bootstrap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "meridian-bootstrap"; sourceTree = "<group>"; };
+		B57A06C2202CDC8B00ACDB9D /* create-spongebob-bootstrap.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "create-spongebob-bootstrap.sh"; sourceTree = "<group>"; };
+		B57A06E4202CDF9100ACDB9D /* spongebob-bootstrap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "spongebob-bootstrap"; sourceTree = "<group>"; };
 		B57A06E6202CEDF500ACDB9D /* cydia-base.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = "cydia-base.tar"; sourceTree = "<group>"; };
 		B57A06E7202CEDF500ACDB9D /* optional-base.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = "optional-base.tar"; sourceTree = "<group>"; };
 		B57A06E8202CEDF500ACDB9D /* system-base.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = "system-base.tar"; sourceTree = "<group>"; };
-		B57A06E9202CEDF500ACDB9D /* meridian-base.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = "meridian-base.tar"; sourceTree = "<group>"; };
+		B57A06E9202CEDF500ACDB9D /* spongebob-base.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = "spongebob-base.tar"; sourceTree = "<group>"; };
 		B57A06EE202CF4F300ACDB9D /* tar.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = tar.tar; sourceTree = "<group>"; };
 		B57CBF60205DA3DF00EEDA20 /* jailbreak_daemonUser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jailbreak_daemonUser.c; sourceTree = "<group>"; };
 		B57CBF65205DB35F00EEDA20 /* fishhook */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fishhook; sourceTree = "<group>"; };
@@ -130,12 +130,12 @@
 		B59532711FFE2B5000022CEE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B5A034FC210D162900C0E52E /* preferences.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = preferences.m; sourceTree = "<group>"; };
 		B5A034FE210D16D600C0E52E /* preferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = preferences.h; sourceTree = "<group>"; };
-		B5A4EA94205F14CD00B32F89 /* meridian-bootstrap.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = "meridian-bootstrap.tar"; sourceTree = "<group>"; };
+		B5A4EA94205F14CD00B32F89 /* spongebob-bootstrap.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = "spongebob-bootstrap.tar"; sourceTree = "<group>"; };
 		B5B7C29F1FF2BA100087619A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5B7C2AA1FF2C7860087619A /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = ../../../../../../System/Library/Frameworks/IOKit.framework; sourceTree = "<group>"; };
 		B5B7C2B51FF353970087619A /* v0rtex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = v0rtex.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
 		B5B7C2B61FF353980087619A /* v0rtex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v0rtex.h; sourceTree = "<group>"; };
-		B5B9E03A2060280400FEA273 /* build_time */ = {isa = PBXFileReference; lastKnownFileType = text; name = build_time; path = Meridian/build_time; sourceTree = "<group>"; };
+		B5B9E03A2060280400FEA273 /* build_time */ = {isa = PBXFileReference; lastKnownFileType = text; name = build_time; path =spongebobbuild_time; sourceTree = "<group>"; };
 		B5C4FBD82052E67700F82D43 /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
 		B5C4FBD92052E67700F82D43 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
 		B5DF1ABF20597A120090B4B5 /* liboffsetfinder64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liboffsetfinder64.a; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 				B57CBF65205DB35F00EEDA20 /* fishhook */,
 				B589518C201D4018002E0EAD /* jailbreakd */,
 				B5895186201D15E7002E0EAD /* pspawn_hook */,
-				B514CC781FECD788005F4E6B /* Meridian */,
+				B514CC781FECD788005F4E6B /*spongebob*/,
 				B514CC771FECD788005F4E6B /* Products */,
 				B5C368AD1FF2B80400D7724F /* Recovered References */,
 				B5B7C2A31FF2C5CE0087619A /* Frameworks */,
@@ -205,12 +205,12 @@
 		B514CC771FECD788005F4E6B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B514CC761FECD788005F4E6B /* Meridian.app */,
+				B514CC761FECD788005F4E6B /*spongebobapp */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B514CC781FECD788005F4E6B /* Meridian */ = {
+		B514CC781FECD788005F4E6B /*spongebob*/ = {
 			isa = PBXGroup;
 			children = (
 				B50F79671FF224F0000D6015 /* views */,
@@ -230,7 +230,7 @@
 				B5B7C2B61FF353980087619A /* v0rtex.h */,
 				B5B7C2B51FF353970087619A /* v0rtex.m */,
 			);
-			path = Meridian;
+			path =spongebob
 			sourceTree = "<group>";
 		};
 		B52F29252051E93A00F4EB57 /* patchfinders */ = {
@@ -250,12 +250,12 @@
 		B57A06B7202CDA9F00ACDB9D /* bootstrap */ = {
 			isa = PBXGroup;
 			children = (
-				B57A06C2202CDC8B00ACDB9D /* create-meridian-bootstrap.sh */,
-				B57A06E4202CDF9100ACDB9D /* meridian-bootstrap */,
+				B57A06C2202CDC8B00ACDB9D /* create-spongebob-bootstrap.sh */,
+				B57A06E4202CDF9100ACDB9D /* spongebob-bootstrap */,
 				B57A06E6202CEDF500ACDB9D /* cydia-base.tar */,
 				B537019A202EB4BF004E5E5C /* dpkgdb-base.tar */,
 				B5370198202EABFF004E5E5C /* installer-base.tar */,
-				B5A4EA94205F14CD00B32F89 /* meridian-bootstrap.tar */,
+				B5A4EA94205F14CD00B32F89 /* spongebob-bootstrap.tar */,
 				B57A06E7202CEDF500ACDB9D /* optional-base.tar */,
 				B57A06E8202CEDF500ACDB9D /* system-base.tar */,
 				B57A06EE202CF4F300ACDB9D /* tar.tar */,
@@ -290,7 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				B50F79481FF2248B000D6015 /* main.m */,
-				B57A06E9202CEDF500ACDB9D /* meridian-base.tar */,
+				B57A06E9202CEDF500ACDB9D /* spongebob-base.tar */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -364,9 +364,9 @@
 /* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
-		B514CC751FECD788005F4E6B /* Meridian */ = {
+		B514CC751FECD788005F4E6B /*spongebob*/ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B514CC8C1FECD788005F4E6B /* Build configuration list for PBXNativeTarget "Meridian" */;
+			buildConfigurationList = B514CC8C1FECD788005F4E6B /* Build configuration list for PBXNativeTarget spongebob */;
 			buildPhases = (
 				B52C43BB200BCC920047B1B4 /* ShellScript */,
 				B5A4EA93205F0E2900B32F89 /* ShellScript */,
@@ -381,9 +381,9 @@
 				B5555EC120543A4100D62F57 /* PBXTargetDependency */,
 				B5555EBF20543A4100D62F57 /* PBXTargetDependency */,
 			);
-			name = Meridian;
-			productName = Meridian;
-			productReference = B514CC761FECD788005F4E6B /* Meridian.app */;
+			name =spongebob
+			productName =spongebob
+			productReference = B514CC761FECD788005F4E6B /*spongebobapp */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -407,7 +407,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B514CC711FECD787005F4E6B /* Build configuration list for PBXProject "Meridian" */;
+			buildConfigurationList = B514CC711FECD787005F4E6B /* Build configuration list for PBXProject spongebob */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -420,7 +420,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B514CC751FECD788005F4E6B /* Meridian */,
+				B514CC751FECD788005F4E6B /*spongebob*/,
 				B5555EA6205438CA00D62F57 /* amfid */,
 				B5555EAE205438F300D62F57 /* pspawn_hook */,
 				B5555EB22054390100D62F57 /* jailbreakd */,
@@ -443,7 +443,7 @@
 				B57A06EB202CEDF500ACDB9D /* optional-base.tar in Resources */,
 				B57A06EC202CEDF500ACDB9D /* system-base.tar in Resources */,
 				B57A06EF202CF4F300ACDB9D /* tar.tar in Resources */,
-				B5A4EA95205F14CE00B32F89 /* meridian-bootstrap.tar in Resources */,
+				B5A4EA95205F14CE00B32F89 /* spongebob-bootstrap.tar in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +456,7 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Meridian/bootstrap/create-meridian-bootstrap.sh",
+				"$(SRCROOT)spongebobbootstrap/create-spongebob-bootstrap.sh",
 			);
 			outputPaths = (
 			);
@@ -470,7 +470,7 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Meridian/build_time",
+				"$(SRCROOT)spongebobbuild_time",
 			);
 			outputPaths = (
 			);
@@ -668,17 +668,17 @@
 				DEVELOPMENT_TEAM = V7798YDA5P;
 				ENABLE_BITCODE = NO;
 				GCC_NO_COMMON_BLOCKS = NO;
-				INFOPLIST_FILE = "$(SRCROOT)/Meridian/views/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)spongebobviews/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Meridian",
+					"$(PROJECT_DIR)spongebob,
 					"$(SYSTEM_LIBRARY_DIR)/Frameworks/IOKit.framework/Versions/A",
 					"$(PROJECT_DIR)",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = zone.sparkes.MeridianJB2;
+				PRODUCT_BUNDLE_IDENTIFIER = zone.sparkesspongebobB2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -697,16 +697,16 @@
 				DEVELOPMENT_TEAM = V7798YDA5P;
 				ENABLE_BITCODE = NO;
 				GCC_NO_COMMON_BLOCKS = NO;
-				INFOPLIST_FILE = "$(SRCROOT)/Meridian/views/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)spongebobviews/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Meridian",
+					"$(PROJECT_DIR)spongebob,
 					"$(SYSTEM_LIBRARY_DIR)/Frameworks/IOKit.framework/Versions/A",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zone.sparkes.MeridianJB2;
+				PRODUCT_BUNDLE_IDENTIFIER = zone.sparkesspongebobB2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -805,7 +805,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B514CC711FECD787005F4E6B /* Build configuration list for PBXProject "Meridian" */ = {
+		B514CC711FECD787005F4E6B /* Build configuration list for PBXProject spongebob */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B514CC8A1FECD788005F4E6B /* Debug */,
@@ -814,7 +814,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B514CC8C1FECD788005F4E6B /* Build configuration list for PBXNativeTarget "Meridian" */ = {
+		B514CC8C1FECD788005F4E6B /* Build configuration list for PBXNativeTarget spongebob */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B514CC8D1FECD788005F4E6B /* Debug */,

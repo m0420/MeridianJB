@@ -5,7 +5,7 @@
 	<key>Label</key>
 	<string>dropbear</string>
 	<key>Program</key>
-	<string>/meridian/dropbear/dropbear</string>
+	<string>/spongebob/dropbear/dropbear</string>
 	<key>UserName</key>
 	<string>root</string>
 	<key>RunAtLoad</key>
@@ -16,7 +16,7 @@
 	<string>/var/log/dropbear-stderr.log</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/meridian/dropbear/dropbear</string>
+		<string>/spongebob/dropbear/dropbear</string>
 		<string>-p</string>
 		<string>22</string>
 		<string>-p</string>

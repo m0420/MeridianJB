@@ -125,7 +125,7 @@ static void ctor(void) {
     }
     INFO("got tfp0: %x", tfp0);
     
-    NSDictionary *off_file = [NSDictionary dictionaryWithContentsOfFile:@"/meridian/offsets.plist"];
+    NSDictionary *off_file = [NSDictionary dictionaryWithContentsOfFile:@"/spongebob/offsets.plist"];
     if (off_file == NULL) {
         ERROR("failed to find the offsets file!");
         return;
@@ -167,6 +167,6 @@ static void ctor(void) {
     rebind_symbols(rebindings, 1);
     INFO("functions have been hooked! get fucked, codesigning :-)");
     
-    // touch file so Meridian know's we're alive in here
+    // touch file sospongebobknow's we're alive in here
     fclose(fopen("/var/tmp/amfid_payload.alive", "w+"));
 }

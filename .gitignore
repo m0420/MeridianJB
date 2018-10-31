@@ -6,5 +6,5 @@ obj
 build_time
 **/bin
 
-!**/meridian-bootstrap/**/*
+!**/spongebob-bootstrap/**/*
 

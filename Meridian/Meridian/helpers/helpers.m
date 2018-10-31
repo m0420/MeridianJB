@@ -1,6 +1,6 @@
 //
 //  helpers.m
-//  Meridian
+// spongebob
 //
 //  Created by Ben Sparkes on 30/12/2017.
 //  Copyright © 2017 Ben Sparkes. All rights reserved.
@@ -332,8 +332,8 @@ int extract_bundle_tar(const char *bundle_name) {
         return -1;
     }
     
-    return execprog("/meridian/tar", (const char **)&(const char*[]) {
-        "/meridian/tar",
+    return execprog("/spongebob/tar", (const char **)&(const char*[]) {
+        "/spongebob/tar",
         "--preserve-permissions",
         "--no-overwrite-dir",
         "-C",
@@ -382,14 +382,14 @@ int execprog(const char *prog, const char* args[]) {
         args = (const char **)&(const char*[]){ prog, NULL };
     }
     
-    if (file_exists("/meridian") != 0) {
-        mkdir("/meridian", 0755);
+    if (file_exists("/spongebob") != 0) {
+        mkdir("/spongebob", 0755);
     }
-    if (file_exists("/meridian/logs") != 0) {
-        mkdir("/meridian/logs", 0755);
+    if (file_exists("/spongebob/logs") != 0) {
+        mkdir("/spongebob/logs", 0755);
     }
     
-    const char *logfile = [NSString stringWithFormat:@"/meridian/logs/%@-%lu",
+    const char *logfile = [NSString stringWithFormat:@"/spongebob/logs/%@-%lu",
                            [[NSMutableString stringWithUTF8String:prog] stringByReplacingOccurrencesOfString:@"/" withString:@"_"],
                            time(NULL)].UTF8String;
     

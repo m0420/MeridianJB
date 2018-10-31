@@ -1,6 +1,6 @@
 //
 //  Preferences.m
-//  Meridian
+// spongebob
 //
 //  Created by Ben Sparkes on 28/07/2018.
 //

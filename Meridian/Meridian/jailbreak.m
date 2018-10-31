@@ -1,6 +1,6 @@
 //
 //  jailbreak.m
-//  Meridian
+// spongebob
 //
 //  Created by Ben Sparkes on 16/02/2018.
 //  Copyright © 2018 Ben Sparkes. All rights reserved.
@@ -79,80 +79,80 @@ int makeShitHappen(ViewController *view) {
     
     [view writeText:@"some filesytem fuckery..."];
     
-    // Remove /meridian in the case of PB's
-    if (file_exists("/meridian") == 0 &&
-        file_exists("/meridian/.bootstrap") != 0) {
-        [fileMgr removeItemAtPath:@"/meridian" error:nil];
+    // Remove /spongebob in the case of PB's
+    if (file_exists("/spongebob") == 0 &&
+        file_exists("/spongebob/.bootstrap") != 0) {
+        [fileMgr removeItemAtPath:@"/spongebob" error:nil];
     }
     
-    if (file_exists("/meridian") != 0) {
-        ret = mkdir("/meridian", 0755);
+    if (file_exists("/spongebob") != 0) {
+        ret = mkdir("/spongebob", 0755);
         if (ret != 0) {
             [view writeText:@"failed!"];
-            [view writeTextPlain:@"creating /meridian failed with error %d: %s", errno, strerror(errno)];
+            [view writeTextPlain:@"creating /spongebob failed with error %d: %s", errno, strerror(errno)];
             return 1;
         }
     }
     
-    if (file_exists("/meridian/logs") != 0) {
-        ret = mkdir("/meridian/logs", 0755);
+    if (file_exists("/spongebob/logs") != 0) {
+        ret = mkdir("/spongebob/logs", 0755);
         if (ret != 0) {
             [view writeText:@"failed!"];
-            [view writeTextPlain:@"creating /meridian/logs failed with error %d: %s", errno, strerror(errno)];
+            [view writeTextPlain:@"creating /spongebob/logs failed with error %d: %s", errno, strerror(errno)];
             return 1;
         }
     }
     
-    if (file_exists("/meridian/tar") == 0) {
-        ret = unlink("/meridian/tar");
+    if (file_exists("/spongebob/tar") == 0) {
+        ret = unlink("/spongebob/tar");
         if (ret != 0) {
             [view writeText:@"failed!"];
-            [view writeTextPlain:@"removing /meridian/tar failed with error %d: %s", errno, strerror(errno)];
+            [view writeTextPlain:@"removing /spongebob/tar failed with error %d: %s", errno, strerror(errno)];
             return 1;
         }
     }
     
-    if (file_exists("/meridian/tar.tar") == 0) {
-        ret = unlink("/meridian/tar.tar");
+    if (file_exists("/spongebob/tar.tar") == 0) {
+        ret = unlink("/spongebob/tar.tar");
         if (ret != 0) {
             [view writeText:@"failed!"];
-            [view writeTextPlain:@"deleting /meridian/tar.tar failed with error %d: %s", errno, strerror(errno)];
+            [view writeTextPlain:@"deleting /spongebob/tar.tar failed with error %d: %s", errno, strerror(errno)];
             return 1;
         }
     }
     
-    ret = extract_bundle("tar.tar", "/meridian");
+    ret = extract_bundle("tar.tar", "/spongebob");
     if (ret != 0) {
         [view writeText:@"failed!"];
         [view writeTextPlain:@"failed to extract tar.tar bundle! ret: %d, errno: %d: %s", ret, errno, strerror(errno)];
         return 1;
     }
     
-    if (file_exists("/meridian/tar") != 0) {
+    if (file_exists("/spongebob/tar") != 0) {
         [view writeText:@"failed!"];
-        [view writeTextPlain:@"/meridian/tar was not found :("];
+        [view writeTextPlain:@"/spongebob/tar was not found :("];
         return 1;
     }
     
-    ret = chmod("/meridian/tar", 0755);
+    ret = chmod("/spongebob/tar", 0755);
     if (ret != 0) {
         [view writeText:@"failed!"];
-        [view writeTextPlain:@"chmod(755)'ing /meridian/tar failed with error %d: %s", errno, strerror(errno)];
+        [view writeTextPlain:@"chmod(755)'ing /spongebob/tar failed with error %d: %s", errno, strerror(errno)];
         return 1;
     }
     
-    ret = inject_trust("/meridian/tar");
+    ret = inject_trust("/spongebob/tar");
     if (ret != 0) {
         [view writeText:@"failed!"];
-        [view writeTextPlain:@"injecting trust to /meridian/tar failed with retcode %d", ret];
+        [view writeTextPlain:@"injecting trust to /spongebob/tar failed with retcode %d", ret];
         return 1;
     }
     
     [view writeText:@"done!"];
     
-    // extract meridian-bootstrap
-    [view writeText:@"extracting meridian files..."];
-    ret = extractMeridianData();
+    // extract spongebob-bootstrap
+    [view writeText:@"extracting spongebob files..."];
+    ret = extracspongebobata();
     if (ret != 0) {
         [view writeText:@"failed!"];
         [view writeTextPlain:[NSString stringWithFormat:@"error code: %d", ret]];
@@ -160,7 +160,7 @@ int makeShitHappen(ViewController *view) {
     }
     [view writeText:@"done!"];
     
-    // dump offsets to file for later use (/meridian/offsets.plist)
+    // dump offsets to file for later use (/spongebob/offsets.plist)
     dumpOffsetsToFile(offsets, kernel_base, kslide);
     
     // patch amfid
@@ -179,7 +179,7 @@ int makeShitHappen(ViewController *view) {
     touch_file("/.cydia_no_stash");
     
     // extract bootstrap (if not already extracted)
-    if (file_exists("/meridian/.bootstrap") != 0) {
+    if (file_exists("/spongebob/.bootstrap") != 0) {
         [view writeText:@"extracting bootstrap..."];
         int exitCode = 0;
         ret = extractBootstrap(&exitCode);
@@ -216,8 +216,8 @@ int makeShitHappen(ViewController *view) {
     }
     
     // add the midnight repo 
-    if (file_exists("/etc/apt/sources.list.d/meridian.list") != 0) {
-        FILE *fd = fopen("/etc/apt/sources.list.d/meridian.list", "w+");
+    if (file_exists("/etc/apt/sources.list.d/spongebob.list") != 0) {
+        FILE *fd = fopen("/etc/apt/sources.list.d/spongebob.list", "w+");
         const char *text = "deb http://repo.midnight.team ./";
         fwrite(text, strlen(text) + 1, 1, fd);
         fclose(fd);
@@ -302,8 +302,8 @@ int makeShitHappen(ViewController *view) {
         [view writeText:@"done!"];
     }
     
-    if (file_exists("/.meridian_installed") != 0) {
-        touch_file("/.meridian_installed");
+    if (file_exists("/.spongebob_installed") != 0) {
+        touch_file("/.spongebob_installed");
     }
     
     great_success = TRUE;
@@ -366,8 +366,8 @@ int remountRootFs() {
     return 0;
 }
 
-int extractMeridianData() {
-    return extract_bundle_tar("meridian-bootstrap.tar");
+int extracspongebobata() {
+    return extract_bundle_tar("spongebob-bootstrap.tar");
 }
 
 void setUpSymLinks() {
@@ -454,7 +454,7 @@ int extractBootstrap(int *exitCode) {
     
     enableHiddenApps();
     
-    touch_file("/meridian/.bootstrap");
+    touch_file("/spongebob/.bootstrap");
     
     rv = uicache();
     if (rv != 0) {
@@ -467,7 +467,7 @@ int extractBootstrap(int *exitCode) {
 
 int defecateAmfi() {
     // trust our payload
-    int ret = inject_trust("/meridian/amfid_payload.dylib");
+    int ret = inject_trust("/spongebob/amfid_payload.dylib");
     if (ret != 0) return -1;
     
     unlink("/var/tmp/amfid_payload.alive");
@@ -477,7 +477,7 @@ int defecateAmfi() {
         return -2;
     }
     
-    ret = inject_library(pid, "/meridian/amfid_payload.dylib");
+    ret = inject_library(pid, "/spongebob/amfid_payload.dylib");
     if (ret != 0) return -2;
     
     int tries = 0;
@@ -497,7 +497,7 @@ int defecateAmfi() {
 
 int launchDropbear() {
     NSMutableArray *args = [NSMutableArray arrayWithCapacity:11];
-    [args addObject:@"/meridian/dropbear/dropbear"];
+    [args addObject:@"/spongebob/dropbear/dropbear"];
     switch (listenPort()) {
         case Port22:
             [args addObjectsFromArray:@[@"-p", @"22"]];
@@ -514,11 +514,11 @@ int launchDropbear() {
     
     [args addObjectsFromArray:@[@"-F", @"-R", @"-E", @"-m", @"-S", @"/"]];
     
-    NSMutableDictionary *newPrefs = [NSMutableDictionary dictionaryWithContentsOfFile:@"/meridian/dropbear/dropbear.plist"];
+    NSMutableDictionary *newPrefs = [NSMutableDictionary dictionaryWithContentsOfFile:@"/spongebob/dropbear/dropbear.plist"];
     newPrefs[@"ProgramArguments"] = args;
-    [newPrefs writeToFile:@"/meridian/dropbear/dropbear.plist" atomically:false];
+    [newPrefs writeToFile:@"/spongebob/dropbear/dropbear.plist" atomically:false];
 
-    return start_launchdaemon("/meridian/dropbear/dropbear.plist");
+    return start_launchdaemon("/spongebob/dropbear/dropbear.plist");
 }
 
 void setUpSubstitute() {
@@ -534,7 +534,7 @@ void setUpSubstitute() {
 int startJailbreakd() {
     unlink("/var/tmp/jailbreakd.pid");
     
-    NSData *blob = [NSData dataWithContentsOfFile:@"/meridian/jailbreakd/jailbreakd.plist"];
+    NSData *blob = [NSData dataWithContentsOfFile:@"/spongebob/jailbreakd/jailbreakd.plist"];
     NSMutableDictionary *job = [NSPropertyListSerialization propertyListWithData:blob options:NSPropertyListMutableContainers format:nil error:nil];
     
     job[@"EnvironmentVariables"][@"KernelBase"]         = [NSString stringWithFormat:@"0x%16llx", kernel_base];
@@ -545,11 +545,11 @@ int startJailbreakd() {
     job[@"EnvironmentVariables"][@"OSBooleanFalse"]     = [NSString stringWithFormat:@"0x%16llx", find_OSBoolean_False()];
     job[@"EnvironmentVariables"][@"OSUnserializeXML"]   = [NSString stringWithFormat:@"0x%16llx", find_OSUnserializeXML()];
     job[@"EnvironmentVariables"][@"Smalloc"]            = [NSString stringWithFormat:@"0x%16llx", find_smalloc()];
-    [job writeToFile:@"/meridian/jailbreakd/jailbreakd.plist" atomically:YES];
-    chmod("/meridian/jailbreakd/jailbreakd.plist", 0600);
-    chown("/meridian/jailbreakd/jailbreakd.plist", 0, 0);
+    [job writeToFile:@"/spongebob/jailbreakd/jailbreakd.plist" atomically:YES];
+    chmod("/spongebob/jailbreakd/jailbreakd.plist", 0600);
+    chown("/spongebob/jailbreakd/jailbreakd.plist", 0, 0);
     
-    int rv = start_launchdaemon("/meridian/jailbreakd/jailbreakd.plist");
+    int rv = start_launchdaemon("/spongebob/jailbreakd/jailbreakd.plist");
     if (rv != 0) return 1;
     
     int tries = 0;

@@ -1,6 +1,6 @@
 //
 //  helpers.h
-//  Meridian
+// spongebob
 //
 //  Created by Ben Sparkes on 30/12/2017.
 //  Copyright © 2017 Ben Sparkes. All rights reserved.

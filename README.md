@@ -1,7 +1,7 @@
-# MeridianJB
+#spongebobB
 An iOS 10.x Jailbreak for all 64-bit devices.
 
-Website: https://meridian.sparkes.zone
+Website: https://spongebob.sparkes.zone
 
 All credits can be found on the website. Thanks to everyone who helped.
 

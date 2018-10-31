@@ -5,7 +5,7 @@
 	<key>Label</key>
 	<string>jailbreakd</string>
 	<key>Program</key>
-	<string>/meridian/jailbreakd/jailbreakd</string>
+	<string>/spongebob/jailbreakd/jailbreakd</string>
 	<key>EnvironmentVariables</key>
 	<dict>
 		<key>KernelBase</key>
